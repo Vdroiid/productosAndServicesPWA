@@ -1,0 +1,7 @@
+--color-primario: #212330;
+--color-secundario: #00ff95;
+--color-botones-normal: #006aff;
+--color-botones-click: #ff8800 ;
+--color-terciario: #646364;
+--color-body: #ffff;
+--border-radio: 5px;

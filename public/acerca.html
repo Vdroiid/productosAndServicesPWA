@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de</title>
+    <link rel="icon" href="icons/icon-144x144.png" type="image/png">
+    <link rel="stylesheet" href="/public/styles/variables.css">
+    <link rel="stylesheet" href="styles/style-index.css">
+    <link rel="stylesheet" href="styles/style-general.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        .main{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <h1 translate="no" class="marca">ByteBazaar</h1>
+        </a>
+        <ul>
+            <li>
+                <a href="productos">Productos</a>
+                <ul class="dropdown">
+                    <li><a href="../src/pages/celulares.html">Celulares</a></li>
+                    <li><a href="../src/pages/compus.html">Computadoras</a></li>
+                    <li><a href="../src/pages/licencias.html">Licencias</a></li>
+                    <li><a href="#otros">Otros</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+        </div>
+
+        <!--Menú desplegable-->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li>
+                <a href="opciones">Productos</a>
+                <ul class="lista-opciones">
+                    <li><a href="../src/pages/celulares.html">Celulares</a></li>
+                    <li><a href="../src/pages/compus.html">Computadoras</a></li>
+                    <li><a href="../src/pages/licencias.html">Licencias</a></li>
+                    <li><a href="#otros">Otros</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <!--Fin del Menú desplegable-->
+    </nav>
+    <div class="main">
+        <h1>Ubicación en el Mapa</h1>
+        <div id="map" style="height: 400px;"></div>
+
+        <script>
+            const map = L.map('map').setView([20.21239811311231, -89.2763314752883], 13); // Reemplaza con tu latitud y longitud
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap'
+            }).addTo(map);
+            const marker = L.marker([latitud, longitud]).addTo(map);
+            marker.bindPopup('Tu ubicación aquí').openPopup();
+        </script>
+    </div>
+    
+
+    <!--Pie de página-->
+    <footer>
+        <div class="container">
+            <h2>Página Web de</h2><h1 class="marca">ByteBazaar</h1>
+        </div>
+        <p><a href="#privacidad" style="color: white;">Política de Privacidad</a> | <a href="#terminos" style="color: white;">Términos de Uso</a></p>
+    </footer>
+</body>
+</html>

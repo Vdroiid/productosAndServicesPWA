@@ -1,0 +1,43 @@
+{
+    "name": "ByteBazaar",
+    "short_name": "ByteBazaar",
+    "start_url": "/public/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#003366",
+    "description": "Esto es una aplicación para comprar aparatos informáticos como teléfonso móviles, licencias, ByteBazaar",
+    "orientation": "portrait",
+    "scope": "/",
+    "icons": [
+        {
+            "src": "./icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./icons/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+
+    "screenshots":[
+    {
+        "src": "./screenshots/screenshots_desktop.png",
+        "sizes":"1349x613",
+        "type": "image/png",
+        "form_factor": "wide"
+    },
+    {
+        "src": "./screenshots/screenshots_movile.png",
+        "sizes": "320x712",
+        "type": "image/png",
+        "form_factor": "narrow"
+    }
+    ]
+}

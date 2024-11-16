@@ -1,0 +1,9 @@
+:root {
+    --color-primario: #012a2e;
+    --color-secundario: #ffc400;
+    --color-botones-normal: #2a5d62;
+    --color-botones-click: #ffc400 ;
+    --color-terciario: #ffc400da;
+    --color-body: #ffffff;
+    --border-radio: 5px;
+}

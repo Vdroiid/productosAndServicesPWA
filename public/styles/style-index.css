@@ -1,0 +1,165 @@
+/*Sección de recomendados*/
+.recomendado{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 80px; /*Para que no se oculte el contenido superior por el navegador*/
+    align-items: center;
+}
+.box-recomendados {
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 530px;
+    width: 450px;
+    justify-content: center;
+    mask-image: linear-gradient(black 80%, transparent);
+    opacity: 1;
+    z-index: 0;
+}
+.box-recomendados h2{
+    position: relative; /* Para que el texto esté sobre el pseudo-elemento */
+    z-index: 1; /* Asegura que el texto esté encima */
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    padding: 5px;
+    border-radius: var(--border-radio);
+    cursor: progress;
+}
+.hardware{
+    background-image: url('../media/images/hardware.jpg'); /* Ruta de la imagen */
+}
+.telefonos{
+    background-image: url('../media/images/telefonos_intelilgentes.jpg'); /* Ruta de la imagen */
+}
+.licencias{
+    background-image: url('../media/images/microsoft_ofice.jpg'); 
+}
+
+/*Sección de otros servicios*/
+.otros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primario);
+    color: var(--color-body);
+}
+.otros img{
+    height: 200px;; /* Mantiene la proporción de la imagen */
+    border-radius: var(--border-radio);
+}
+
+.box-otros{
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+.servicios{
+    padding: 1em;
+    border-radius: 5px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Sección comentarios*/
+.container-comentario{
+    color: var(--color-body);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.comentarios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--color-botones-normal);
+    color: var(--color-body);
+}
+
+.box-comentarios {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 241px;
+    position: relative; /* Para que el texto esté sobre el pseudo-elemento */
+    z-index: 0;
+}
+.box-comentarios p{
+    font-style: italic;
+}
+
+/*Sección de formulario*/
+.formulario{
+    background-color: var(--color-body);
+    color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 1em
+}
+.box-formulario input{
+    width: 250px;
+    height: 23px;
+    padding: 0.5em;
+    color: var(--color-primario);
+    border: 1px solid var(--color-botones-click);
+    border-radius: var(--border-radio);
+}
+
+@media (max-width: 470px) {
+    .box-otros {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .otros img {
+        height: 150px;
+    }
+    .box-comentarios {
+        position: relative;
+        color: var(--color-body);
+        height: auto;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0%;
+        flex-wrap: wrap;
+    }
+    .box-formulario input {
+        width: 180px;
+        height: 23px;
+        padding: 0.5em;
+        color: var(--color-primario);
+        border: 1px solid #F5F5F5;
+        border-radius: 5px;
+    }
+}
+
+
+
+

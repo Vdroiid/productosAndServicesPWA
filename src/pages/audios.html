@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música</title>
+    <link rel="icon" href="../../public/icons/icon-144x144.png" type="image/png">
+    <link rel="stylesheet" href="../../public/styles/variables.css">
+    <link rel="stylesheet" href="../../public/styles/style-general.css">
+    <link rel="stylesheet" href="../assets/css/div_productos_servicio.css">
+    <style>
+        .box-audio{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button{
+            margin: 1em
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../../public/">
+            <h1 translate="no" class="marca">ByteBazaar</h1>
+        </a>
+        <ul>
+            <li>
+                <a href="productos">Productos</a>
+                <ul class="dropdown">
+                    <li><a href="celulares.html">Celulares</a></li>
+                    <li><a href="compus.html">Computadoras</a></li>
+                    <li><a href="licencias.html">Licencias</a></li>
+                    <li><a href="#otros">Otros</a></li>
+                </ul>
+            </li>
+            <li><a href="#acerca">Acerca</a></li>
+            <li><a href="../../public/contacto.html">Contacto</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+        </div>
+
+        <!--Menú desplegable-->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li>
+                <a href="opciones">Productos</a>
+                <ul class="lista-opciones">
+                    <li><a href="celulares.html">Celulares</a></li>
+                    <li><a href="compus.html">Computadoras</a></li>
+                    <li><a href="licencias.html">Licencias</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="../../public/contacto.html">Contacto</a></li>
+        </ul>
+        <!--Fin del Menú desplegable-->
+    </nav>
+
+    <!-- Sección de canciones -->
+    <section class="main">
+        <h2>Música</h2>
+        <div class="container-main">
+            <div class="box-audio">
+                <img id="cover" src="../assets/images/local.jpg" alt="Portada de la canción" />
+                <p id="label">No hay contenido en reproducción</p>
+                <progress id="progress" width="100%" value="0"></progress>
+                <button id="play">Reproducir</button>
+                <button id="pause">Pausar</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--Pie de página-->
+    <footer>
+        <div class="container">
+            <h1 class="marca">ByteBazaar</h1>
+        </div>
+        <p><a href="#privacidad">Política de Privacidad</a> | <a href="#terminos">Términos de Uso</a></p>
+    </footer>
+    <script src="../assets/js/audioapi.js"></script>
+</body>
+</html>
